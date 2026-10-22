@@ -1,3 +1,59 @@
 [gd_scene format=3 uid="uid://dcfo5v71asxyb"]
 
+[ext_resource type="Texture2D" uid="uid://da8qheqqifdgr" path="res://photu hai bhai photu.jpg" id="1_l2mmo"]
+[ext_resource type="Texture2D" uid="uid://d24dvsfpg63x8" path="res://Subject.png" id="2_fd74g"]
+[ext_resource type="Script" uid="uid://y1buk1qxublp" path="res://timer_screen.gd" id="3_2irwe"]
+
 [node name="Hello scene" type="Node2D" unique_id=1389398483]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1858623994]
+offset_left = -10.0
+offset_top = 1.0
+offset_right = 1149.0
+offset_bottom = 686.0
+texture = ExtResource("1_l2mmo")
+
+[node name="Garlic container" type="HBoxContainer" parent="TextureRect" unique_id=1472496163]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 180.0
+offset_right = 908.0
+offset_bottom = 308.0
+
+[node name="Garlic" type="TextureRect" parent="TextureRect/Garlic container" unique_id=1066179059]
+layout_mode = 2
+texture = ExtResource("2_fd74g")
+
+[node name="Garlic2" type="TextureRect" parent="TextureRect/Garlic container" unique_id=1101870497]
+layout_mode = 2
+texture = ExtResource("2_fd74g")
+
+[node name="Garlic3" type="TextureRect" parent="TextureRect/Garlic container" unique_id=1745423458]
+layout_mode = 2
+texture = ExtResource("2_fd74g")
+
+[node name="Garlic4" type="TextureRect" parent="TextureRect/Garlic container" unique_id=874763701]
+layout_mode = 2
+texture = ExtResource("2_fd74g")
+
+[node name="Garlic5" type="TextureRect" parent="TextureRect/Garlic container" unique_id=1688383820]
+layout_mode = 2
+texture = ExtResource("2_fd74g")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=855536302]
+offset_left = 468.0
+offset_top = 399.0
+offset_right = 621.0
+offset_bottom = 454.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Level#"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1928088137]
+offset_left = 501.0
+offset_top = 506.0
+offset_right = 598.0
+offset_bottom = 562.0
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0
+"
+script = ExtResource("3_2irwe")
