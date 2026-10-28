@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://da8qheqqifdgr" path="res://photu hai bhai photu.jpg" id="1_l2mmo"]
 [ext_resource type="Texture2D" uid="uid://d24dvsfpg63x8" path="res://Subject.png" id="2_fd74g"]
 [ext_resource type="Script" uid="uid://y1buk1qxublp" path="res://timer_screen.gd" id="3_2irwe"]
+[ext_resource type="Script" uid="uid://brkdnqu8kwdop" path="res://rich_text_label.gd" id="4_fd74g"]
 
 [node name="Hello scene" type="Node2D" unique_id=1389398483]
 
@@ -57,3 +58,8 @@ theme_override_font_sizes/normal_font_size = 42
 text = "0.0
 "
 script = ExtResource("3_2irwe")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=64462568]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_fd74g")
