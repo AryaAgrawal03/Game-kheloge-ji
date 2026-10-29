@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dqrbrk0rbw66u"]
+
+[ext_resource type="Texture2D" uid="uid://utar0asynu5j" path="res://kya_hua_bhau-removebg-preview.png" id="2_i3pqv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n16mn"]
+radius = 293.24973
+
+[node name="player" type="CharacterBody2D" unique_id=632615148]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1803578020]
+position = Vector2(-5, -3)
+scale = Vector2(1.0015291, 0.75765765)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1360480654]
+position = Vector2(5.990839, 5.2794294)
+shape = SubResource("CircleShape2D_n16mn")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=347468609]
